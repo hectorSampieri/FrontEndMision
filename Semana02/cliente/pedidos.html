@@ -5,57 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasteleria La Espacial</title>
+    <link rel="stylesheet" type="text/css" href="../css/pagina.css" media="screen" />
 </head>
 <body>
-    <!-- Headings -->
+    <header>
+        <h1>Bienvenidos a su pastelería de confianza</h1>
+    </header>
+    
+    <section>
+        <nav>
+            <img src="../img/logo.png" alt="Pastelería"  width="250">
+            <ul>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Pedidos</a></li>
+                <li><a href="#">Administración</a></li>
+            </ul>
+        </nav>
+        <article>  
+            <h2>Realizar pedido</h2>
+            <h3>Sabor de pasteles</h3>
+            <input type="checkbox" id="decoracion1" name="decoracion1" value="Café">
+            <label for="decoracion1">Café</label><br>
+            <input type="checkbox" id="decoracion2" name="decoracion2" value="Vainilla">
+            <label for="decoracion2">Vainilla</label><br>
+            <input type="checkbox" id="decoracion3" name="decoracion3" value="Chocolate">
+            <label for="decoracion3">Chocolate</label><br>
+            <input type="checkbox" id="decoracion4" name="decoracion4" value="Fresa">
+            <label for="decoracion3">Fresa</label> <br><br>
 
- 
-    <img src="../img/logo.png" alt="Pastelería" >
-    <h1>Bienvenidos a su pastelería de confianza</h1>
 
-    <!-- Parrafos -->
- 
-    <p></p>
+            <h3>Decoraciones</h3>
+            <input type="checkbox" id="decoracion1" name="decoracion1" value="betun">
+            <label for="decoracion1">Betún</label><br>
+            <input type="checkbox" id="decoracion2" name="decoracion2" value="fondant">
+            <label for="decoracion2">Fondant</label><br>
+            <input type="checkbox" id="decoracion3" name="decoracion3" value="chocolate">
+            <label for="decoracion3">Chocolate</label><br>
+            <br><br>
 
-    <h2>Realizar pedido</h2>
-    <p>--------------- ------------------- ----------------</p>
-    <h3>Sabor de pasteles</h3>
-    <input type="checkbox" id="decoracion1" name="decoracion1" value="Café">
-    <label for="decoracion1">Café</label><br>
-    <input type="checkbox" id="decoracion2" name="decoracion2" value="Vainilla">
-    <label for="decoracion2">Vainilla</label><br>
-    <input type="checkbox" id="decoracion3" name="decoracion3" value="Chocolate">
-    <label for="decoracion3">Chocolate</label><br>
-    <input type="checkbox" id="decoracion4" name="decoracion4" value="Fresa">
-    <label for="decoracion3">Fresa</label> <br><br>
-
-
-    <h3>Decoraciones</h3>
-    <input type="checkbox" id="decoracion1" name="decoracion1" value="betun">
-    <label for="decoracion1">Betún</label><br>
-    <input type="checkbox" id="decoracion2" name="decoracion2" value="fondant">
-    <label for="decoracion2">Fondant</label><br>
-    <input type="checkbox" id="decoracion3" name="decoracion3" value="chocolate">
-    <label for="decoracion3">Chocolate</label><br>
-    <br><br>
+            <h2>Datos de contacto</h2>
+            <form action="/accion.js" id="form1" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="telefono">Telefono</label>
+                <input type="text" id="telefono" name="telefono"><br>
+                <label for="correoElectronico">Correo electrónico:</label>
+                <input type="text" id="correoElectronico" name="correoElectronico"><br>
+                <label for="Descripción del pastel o notas ">Descripción</label>
+                <textarea rows = "5" cols = "60" name = "descripcion"></textarea><br>
+                <br><br>
+                <input type="submit" value="Enviar" >
+                <input type="reset" value="Limpiar">
+            </form>
+        </article>
+    </section>
+    <footer>
+        <p>Nuestra dirección es Marte esquina Saturno Fraccionamiento Los Planetas,
+            Horario: 8 a 22 hrs.,
+            Telefono: 122121212
+        </p>
+    </footer>
     
     
-    <h2>Datos de contacto</h2>
-    <form action="/accion.js" id="form1" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre"><br>
-        <label for="telefono">Telefono</label>
-        <input type="text" id="telefono" name="telefono"><br>
-        <label for="correoElectronico">Correo electrónico:</label>
-        <input type="text" id="correoElectronico" name="correoElectronico"><br>
-        <label for="Descripción del pastel o notas ">Descripción</label>
-        <textarea rows = "5" cols = "60" name = "descripcion">
-        </textarea><br>
-        <br>
-        <br><br>
-        <input type="submit" value="Submit">
-        <input type="reset">
-    </form>
+    
 
 </body>
 </html>
